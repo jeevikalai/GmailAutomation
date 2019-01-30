@@ -5,7 +5,10 @@
     <classes>
       <class name="gmail.GMailTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
           <include name="testSendEmail"/>
+          <include name="endReport"/>
         </methods>
       </class> <!-- gmail.GMailTest -->
     </classes>

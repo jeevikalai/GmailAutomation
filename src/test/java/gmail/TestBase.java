@@ -18,7 +18,7 @@ public class TestBase {
 
 	public TestBase() throws IOException {
 		properties = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\jeevi\\Downloads\\qa-automation-java\\qa-automation-selenium-java\\src\\test\\resources\\test.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\src\\test\\java\\resources\\test.properties");
 		properties.load(fis);
 		 
 	}
