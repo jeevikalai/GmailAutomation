@@ -63,10 +63,9 @@ public class GMailTest extends TestBase {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		// after execution, you could see a folder "FailedTestsScreenshots"
 		// under src folder
-		System.out.println(System.getProperty("user.dir"));
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" +    screenshotName + dateName
-				+ ".png";
-		File finalDestination = new File(destination); 
+	//	System.out.println(System.getProperty("user.dir"));
+	 	String destination = "c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\FailedTestsScreenshots\\testSendEmail.png";
+		File finalDestination = new File("c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\FailedTestsScreenshots\\testSendEmail.png"); 
 		FileUtils.copyFile(source, finalDestination);
 	
 		return destination;
@@ -124,7 +123,7 @@ public class GMailTest extends TestBase {
         WebElement composeElement = driver.findElement(By.xpath("//div[@role = 'button' and text()='Compose']"));
         composeElement.click();
 
-        driver.findElement(By.name("t")).clear();
+        driver.findElement(By.name("to")).clear();
         driver.findElement(By.name("t")).sendKeys(String.format("%s@gmail.com", properties.getProperty("username")));
         String emailSubject = properties.getProperty("email.subject");
 
