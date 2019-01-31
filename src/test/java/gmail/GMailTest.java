@@ -64,8 +64,8 @@ public class GMailTest extends TestBase {
 		// after execution, you could see a folder "FailedTestsScreenshots"
 		// under src folder
 	//	System.out.println(System.getProperty("user.dir"));
-	 	String destination = "c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\FailedTestsScreenshots\\testSendEmail.png";
-		File finalDestination = new File("c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\FailedTestsScreenshots\\testSendEmail.png"); 
+	 	String destination = "c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\test-output\\testSendEmail.png";
+		File finalDestination = new File("c:\\Users\\jeevi\\seleniumproject\\GmailAutomation\\tst-output\\testSendEmail.png"); 
 		FileUtils.copyFile(source, finalDestination);
 	
 		return destination;
