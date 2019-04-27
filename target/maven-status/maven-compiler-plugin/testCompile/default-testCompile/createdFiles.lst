@@ -1,2 +1,3 @@
 gmail\TestBase.class
 gmail\GMailTest.class
+resources\ExtentReporterNG.class
